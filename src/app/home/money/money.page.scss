@@ -1,0 +1,22 @@
+
+
+ion-card {
+  img {
+    position: relative;
+  }
+
+  ion-card-title {
+    padding: 5px;
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    writing-mode: vertical-lr;
+    color: #fff;
+    background: #eb445a;
+    font-weight: 400;
+  }
+
+  ion-card-subtitle {
+    text-align: right;
+  }
+}

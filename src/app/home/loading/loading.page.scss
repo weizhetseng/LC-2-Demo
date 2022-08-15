@@ -1,0 +1,13 @@
+ion-content {
+  --background: #000;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

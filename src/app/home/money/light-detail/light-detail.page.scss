@@ -1,0 +1,50 @@
+.titleBg {
+  text-align: center;
+
+  img {
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    right: 145px;
+    top: -5px;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+
+ion-content{
+  background-image: url("/src/app/assets/icon/背景.png");
+}
+
+ion-card {
+  img{
+    width: 100%;
+    position: relative;
+  }
+  ion-card-title{
+    padding: 5px;
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    writing-mode: vertical-lr;
+    color: #fff;
+    background: #eb445a;
+    font-weight: 400;
+    span{
+      font-size: 20px;
+    }
+    .normalSet{
+      writing-mode:horizontal-tb;
+    }
+  }
+  .price{
+    font-weight: bold;
+  }
+
+  ion-card-subtitle {
+    text-align: right;
+  }
+}

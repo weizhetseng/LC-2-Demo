@@ -1,0 +1,15 @@
+.btn{
+  margin-top: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  button{
+    color: #000;
+    background: #F8E4BD;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
