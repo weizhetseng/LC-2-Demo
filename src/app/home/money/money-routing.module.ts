@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'light-detail',
     loadChildren: () => import('./light-detail/light-detail.module').then(m => m.LightDetailPageModule)
+  },  {
+    path: 'draws',
+    loadChildren: () => import('./draws/draws.module').then( m => m.DrawsPageModule)
   },
+
 ];
 
 @NgModule({
