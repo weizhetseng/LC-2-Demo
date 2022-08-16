@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'draws',
     loadChildren: () => import('./draws/draws.module').then( m => m.DrawsPageModule)
   },
+  {
+    path: 'donate',
+    loadChildren: () => import('./donate/donate.module').then( m => m.DonatePageModule)
+  },
 
 ];
 
