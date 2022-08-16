@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     position: static;
+    text-align: center;
   }
   #navi,
   #infoi {
@@ -18,4 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .lowlv{
+    text-align: center;
   }
