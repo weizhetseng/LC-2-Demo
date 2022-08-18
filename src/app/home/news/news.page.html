@@ -4,6 +4,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
-</ion-content>
+  <ion-content *ngFor="let i of page" style="text-align:center ;">
+     <h1>{{i.name}}</h1>
+     <p >{{i.content1}}</p>
+     <p >{{i.content2}}</p>
+     <p >{{i.content3}}</p>
+     <p >{{i.content4}}</p>
+     <p >{{i.content5}}</p>
+     <p >{{i.content6}}</p>
+  <img src="../../../assets/images/{{i.photo1}}">
+  <img src="../../../assets/images/{{i.photo2}}">
+  <img src="../../../assets/images/{{i.photo3}}">
+  <img src="../../../assets/images/{{i.photo4}}">
+
+  </ion-content>
+

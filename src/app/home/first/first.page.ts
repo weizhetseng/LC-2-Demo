@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HOMEPAGES } from '../model/homepage.model';
+import { pagepic } from '../mock/mock.home';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-first',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl :NavController) { }
 
   ngOnInit() {
   }
@@ -16,6 +19,9 @@ export class FirstPage implements OnInit {
   imgnames: string[] = ["mz_q", "fdzs_q", "yl_q"]
   imgtheone: string = this.imgnames[0]
   index = 0
+  barpic : HOMEPAGES[] = pagepic 
+  selectNews? : HOMEPAGES;
+
 
   nextgod(): void {
     console.log("000")
@@ -27,6 +33,9 @@ export class FirstPage implements OnInit {
     this.imgtheone = this.imgnames[this.index];
   }
 
+  showDetail(){
+    this.navCtrl.navigateForward('home/news');
+  }
 
 
 
