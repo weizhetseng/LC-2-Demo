@@ -1,25 +1,12 @@
-ion-slides {
-
-  ion-slide {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 
-
-
-.titleBg {
-  text-align: center;
-  margin-top: 10px;
-  position: relative;
-
-
-  p {
-    position: absolute;
-top: -8px;
-right: 60px;
-    font-size: 20px;
-    color: #fff;
+.btn{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px;
+  button{
+    padding: 20px;
+    border-radius: 12px;
   }
 }

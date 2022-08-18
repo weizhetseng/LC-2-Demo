@@ -7,51 +7,21 @@
     <img src="./assets/icon/標題素材.png" alt="">
     <p>服務預約</p>
   </div>
-  <ul>
-    <li class="btn">
-      <p class="btn_title">收驚</p>
-      <div class="btn_text">
-        <p>受理時間：隨時受理 <br>收驚儀式時間：中午12時及下午5時，各一次<br> 應準備項目：一件洗乾淨上半身衣服 <br>程序：填寫當事人姓名、年齡、住址 <br>取回時間：下午2時、下午7時
-          <br>功德金：金紙100
-        </p>
-        <button (click)="showDetail()">立即預約</button>
-      </div>
-    </li>
-    <li class="btn">
-      <p class="btn_title">淨車</p>
-      <div class="btn_text">
-        <p>受理時間：隨時受理 儀式時間：上午8時至12時、下午2時至5時 應準備項目：一份媽祖金及6炷香 程序：天公爐3柱、媽祖爐3柱， 稟告車牌號碼，祈求淨車平安之後，把媽祖金拿至服務台添油香，由廟方人員於廣場前舉行淨車儀式。 備註：遇雨、陰天及特殊節日則暫停服務 功德金：轎車500、機車200
-        </p>
-        <button (click)="showDetail()">立即預約</button>
-      </div>
-    </li>
 
-    <li class="btn">
-      <p class="btn_title">普渡法會</p>
-      <div class="btn_text">
-        <p>法會（共三日）農曆7月13、14、15日 受理時間： 農曆6月初【正確日期會另行公告】 程序：填寫拔薦先人姓名、住址 備註：拔薦祖先、冤親債主、嬰靈、動物靈...等 功德金：歷代祖先2,000、個人500、嬰靈500、動物靈500、地基主500、代辦普桌 1,500
-        </p>
+  <ion-accordion-group>
+    <ion-accordion value="{{item.title}}"  *ngFor="let item of pagedata">
+      <ion-item slot="header" color="light">
+        <ion-label>{{item.title}}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <p>{{item.content1}}</p>
+        <p>{{item.content2}}</p>
+        <p>{{item.content3}}</p>
+        <p>{{item.content4}}</p>
+        <p>{{item.content5}}</p>
+        <p>{{item.content6}}</p>
         <button (click)="showDetail()">立即預約</button>
       </div>
-    </li>
-    <li class="btn">
-      <p class="btn_title">契子</p>
-      <div class="btn_text">
-        <p>受理時間：隨時受理 儀式時間：上午8時至下午5時 應準備項目：鮮花1對、5種水果、紅湯圓3碗 程序：填寫當事人姓名、生日、住址、連絡電話 備註：需先擲筊請示神明後才辦理 功德金：600
-        </p>
-        <button (click)="showDetail()">立即預約</button>
-      </div>
-    </li>
-    <li class="btn">
-      <p class="btn_title">消災</p>
-      <div class="btn_text">
-        <p>消災時間 ：農曆初一、十五 應準備項目：有無衣服均可 有衣服時，前三天受理 無衣服時，隨時受理 備註：農曆春節期間（農曆正月初一、十五日）及農曆七月十五日暫停服務， 農曆七月初一日提前於 農曆六月三十日舉行。 功德金：150
-        </p>
-        <button (click)="showDetail()">立即預約</button>
-      </div>
-    </li>
-
-
-
-  </ul>
+    </ion-accordion>
+  </ion-accordion-group>
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { moneypage, MONEYPAGES } from '../mock/moneypage';
 @Component({
   selector: 'app-money',
   templateUrl: './money.page.html',
@@ -7,15 +8,18 @@ import { NavController } from '@ionic/angular';
 })
 export class MoneyPage implements OnInit {
 
+  pagedata: MONEYPAGES[] = moneypage;
+  selectpage?: MONEYPAGES;
+
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
-  showDetail() {
+  showDetail(selectpage: MONEYPAGES): void {
 
-    this.navCtrl.navigateForward('home/money/light-detail');
+    this.navCtrl.navigateForward('home/money/' + selectpage.type);
 
-    }
+  }
 
 }

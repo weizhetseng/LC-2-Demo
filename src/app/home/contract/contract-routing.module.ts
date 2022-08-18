@@ -11,6 +11,14 @@ const routes: Routes = [
   {
     path: 'server',
     loadChildren: () => import('./server/server.module').then( m => m.ServerPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'download',
+    loadChildren: () => import('./download/download.module').then( m => m.DownloadPageModule)
   }
 ];
 

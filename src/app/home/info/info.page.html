@@ -1,13 +1,20 @@
+<ion-header>
+  <img class="header" src="./assets/icon/至頂宮廟圖.png" alt="">
+</ion-header>
+
 <ion-content>
-  <ion-slides>
-    <ion-slide *ngFor="let item of arrayInfo">
-      <img class="header" src="{{item.imageURL}}" alt="">
-      <div class="titleBg">
-        <img class="title" src="./assets/icon/標題素材.png" alt="">
-        <p class="title-text">{{item.title}}</p>
-      </div>
-      <h5>所在位置：{{item.location}}</h5>
-      <p>{{item.content}}</p>
-    </ion-slide>
-  </ion-slides>
+  <div class="titleBg">
+    <img src="./assets/icon/標題素材.png" alt="">
+    <p>歷史介紹</p>
+  </div>
+
+
+  <div class="btn">
+    <button (click)="showHistory()">歷史沿革</button>
+    <button (click)="showActivity()">遶境十八庄</button>
+    <button (click)="showTraffic()">交通資訊</button>
+    <button (click)="showGod()">諸聖神明</button>
+
+  </div>
+
 </ion-content>

@@ -1,0 +1,21 @@
+<ion-content >
+  <swiper [config]="swiperConfig">
+    <ng-template  swiperSlide *ngFor="let item of pagedata">
+      <div scrollX="true">
+        <img class="header" src="{{item.imageURL}}" alt="">
+        <div class="titleBg">
+          <img class="title" src="./assets/icon/標題素材.png" alt="">
+          <p class="title-text">{{item.title}}</p>
+        </div>
+        <h5>所在位置：{{item.location}}</h5>
+        <p>{{item.content}}</p>
+      </div>
+
+    </ng-template>
+
+
+  </swiper>
+
+
+
+</ion-content>

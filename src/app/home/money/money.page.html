@@ -5,36 +5,23 @@
 <ion-content>
   <div class="titleBg">
     <img src="./assets/icon/標題素材.png" alt="">
-    <p>消災樂捐</p>
+    <p>祈福專區</p>
   </div>
-  <ion-card>
-    <img src="./assets/icon/燈種圖.png" alt="">
+
+
+  <ion-card *ngFor="let item of pagedata">
+    <img src="{{item.imageurl}}" alt="">
     <ion-card-header>
-      <ion-card-subtitle>線上點燈</ion-card-subtitle>
-      <ion-card-title>線上點燈</ion-card-title>
+      <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
+      <ion-card-title>{{item.name}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>光明燈、安太歲、文昌燈/斗、財神燈/斗</p>
-      <p>華陀燈/斗、姻緣燈</p>
+      <p>{{item.text1}}</p>
+      <p>{{item.text2}}</p>
     </ion-card-content>
     <ion-toolbar>
-      <ion-button color="danger" size="small" slot="end" [routerLinkActive]="['/info']" (click)="showDetail()">
+      <ion-button color="danger" size="small" slot="end" [routerLinkActive]="['/info']" (click)="showDetail(item)">
         立即預約
-      </ion-button>
-    </ion-toolbar>
-  </ion-card>
-  <ion-card>
-    <img src="./assets/icon/燈種圖 (1).png" alt="">
-    <ion-card-header>
-      <ion-card-subtitle>線上捐款</ion-card-subtitle>
-      <ion-card-title>香油錢</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>功德無量 隨喜樂捐</p>
-    </ion-card-content>
-    <ion-toolbar>
-      <ion-button color="danger" size="small" slot="end">
-        隨喜樂捐
       </ion-button>
     </ion-toolbar>
   </ion-card>
