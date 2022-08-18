@@ -1,47 +1,34 @@
-<ion-tabs>
 
-  <ion-tab-bar slot="bottom" color="danger">
 
-    <ion-tab-button tab="first">
 
-      <ion-icon name="home"></ion-icon>
+<ion-tabs>  
 
-      <ion-label>首頁</ion-label>
-
+  <ion-fab vertical="bottom" horizontal="center" translucent="true">
+    <ion-fab-button tab="first" >
+      <ion-icon class="center" src="../../assets/svg/in-home.svg"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-tab-bar slot="bottom" class="ion-no-border">
+    <ion-tab-button tab="first" class="first">
+      <ion-icon src="../../assets/svg/in-home.svg"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="news">
-
-      <ion-icon name="document-text-outline"></ion-icon>
-
-      <ion-label>最新消息</ion-label>
-
+    <ion-tab-button tab="news" class="comments">
+      <ion-icon src="../../assets/svg/in-calendar-lines-pen.svg"></ion-icon>
+      
     </ion-tab-button>
 
-    <ion-tab-button tab="money">
+    <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="red" fill-rule="evenodd"></path></svg>
 
-      <ion-icon name="diamond-outline"></ion-icon>
+    <ion-tab-button tab="money" class="notifs">
+      <ion-icon src="../../assets/svg/in-filter.svg"></ion-icon>
+     
+    </ion-tab-button> 
 
-      <ion-label>祈福專區</ion-label>
-
+    <ion-tab-button tab="info" class="info">
+      <ion-icon class="info" src="../../assets/svg/temple3.svg"></ion-icon>
     </ion-tab-button>
-
-    <ion-tab-button tab="info">
-
-      <ion-icon name="desktop-outline"></ion-icon>
-
-      <ion-label>歷史介紹</ion-label>
-
-    </ion-tab-button>
-
-    <ion-tab-button tab="contract">
-
-      <ion-icon name="person-outline"></ion-icon>
-
-      <ion-label>預約服務</ion-label>
-
-    </ion-tab-button>
-
   </ion-tab-bar>
-
 </ion-tabs>
+
