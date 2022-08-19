@@ -1,0 +1,67 @@
+<ion-header>
+  <img src="./assets/icon/至頂宮廟圖.png" alt="">
+</ion-header>
+
+<ion-content  id="table">
+  <div class="titleBg">
+    <img src="./assets/icon/標題素材.png" alt="">
+    <p>祈福燈種</p>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-select [(ngModel)]="dtype" placeholder="請選擇籤種" >
+        <ion-select-option value="mz">媽祖靈籤</ion-select-option>
+        <ion-select-option value="gl">月老靈籤</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="draws()">抽籤</ion-button>
+  <div  style="display:{{displaytype1}}">
+<ion-item>抽籤結果為 第 {{ans}} 號籤，請擲筊</ion-item>
+<div style="display:{{displaytype6}}">
+<ion-img src="../../../../assets/images/barrel_n.png"  class="OK"></ion-img>
+</div>
+<ion-button (click)="draw2()" >擲筊</ion-button>
+</div>
+<div  style="display:{{displaytype2}}">
+<ion-item>擲筊結果為   {{drawans}}</ion-item>
+<div style="display:{{displaytype5}}"  id="pic1" >
+<ion-img src="../../../../assets/images/{{divination}}" class="OK" ></ion-img>
+</div>
+</div>
+<div  style="display:{{displaytype3}}">
+  <ion-button (click)="open()">查看籤詩</ion-button>
+  </div>
+  <div  style="display:{{displaytype4}}" class="pic" >
+<ion-img   src="../../../../assets/images/{{filename}}/{{imgname}}.png"></ion-img>
+    </div>
+</ion-content>
+
+
+<script>
+fade(area,speed,type){
+  var op  = Number(area.style.opacity);
+  if(type == "in"){
+  if ( op !==1 ){
+var num = 0;
+var st = setInterval(function() {
+  num ++;
+  op = num/10;
+  if(num>=10){
+    clearInterval(st);
+  }
+},speed);
+  }
+ }else if (type == "out"){
+  if ( op !==0 ){
+    var num = 10;
+    var st = setInterval(function() {
+      num --;
+      op = num/10;
+      if(num <= 0){
+        clearInterval(st);
+      }
+    },speed);
+      }
+ }
+}</script>
