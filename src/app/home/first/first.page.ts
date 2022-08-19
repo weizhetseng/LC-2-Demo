@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper, { SwiperOptions, Pagination } from 'swiper';
+import { HomeBanners } from '../model/newshome.model';
+import { bannerpic } from '../mock/mock.homeBanner';
+
 
 
 @Component({
@@ -12,7 +15,7 @@ export class FirstPage implements OnInit {
     pagination: true,
   };
 
-
+bannerimgs : HomeBanners[] = bannerpic;
 
   constructor() { }
 

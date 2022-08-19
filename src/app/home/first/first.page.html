@@ -1,13 +1,7 @@
 <ion-header>
 <swiper  style="text-align:center ;">
-  <ng-template swiperSlide>
-    <img class="header" src="./assets/images/news/news1.png" alt="">
-  </ng-template>
-  <ng-template swiperSlide>
-    <img class="header" src="./assets/images/news/news2.png" alt="">
-  </ng-template>
-  <ng-template swiperSlide>
-    <img class="header" src="./assets/images/news/news3.png" alt="">
+  <ng-template swiperSlide  *ngFor="let i of bannerimgs ">
+    <img class="header" src="./assets/images/news/{{i.name}}" alt="" >
   </ng-template>
 </swiper>
 </ion-header>
