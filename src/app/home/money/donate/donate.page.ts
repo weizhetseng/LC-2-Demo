@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DonatePage implements OnInit {
 
   constructor() { }
-
+  displaytop :string = "inline"
   ngOnInit() {
   }
+
+  close():void {
+    this.displaytop = "none"
+  }
+
 
 }

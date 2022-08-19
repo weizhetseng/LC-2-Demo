@@ -9,7 +9,7 @@
   </div>
 
 
-  <ion-card *ngFor="let item of pagedata">
+  <ion-card *ngFor="let item of pagedata" (click)="showDetail(item)">
     <img src="{{item.imageurl}}" alt="">
     <ion-card-header>
       <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
@@ -20,7 +20,7 @@
       <p>{{item.text2}}</p>
     </ion-card-content>
     <ion-toolbar>
-      <ion-button color="danger" size="small" slot="end" [routerLinkActive]="['/info']" (click)="showDetail(item)">
+      <ion-button color="danger" size="small" slot="end" [routerLinkActive]="['/info']" >
         立即預約
       </ion-button>
     </ion-toolbar>
