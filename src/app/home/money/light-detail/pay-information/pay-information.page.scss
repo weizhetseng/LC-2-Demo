@@ -1,25 +1,11 @@
-.titleBg {
-  text-align: center;
 
-  img {
-    position: relative;
-  }
-
-  p {
-    position: absolute;
-    right: 145px;
-    top: -5px;
-    font-size: 20px;
-    color: #fff;
-  }
-}
 
 
 form{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 20px;
+  padding: 10px;
   input{
     padding: 6px 12px;
   }

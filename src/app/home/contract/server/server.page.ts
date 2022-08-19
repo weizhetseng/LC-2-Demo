@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { serverpage, SERVERPAGES } from '../../mock/serverpage';
+
 
 
 @Component({
@@ -8,6 +10,9 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./server.page.scss'],
 })
 export class ServerPage implements OnInit {
+
+  pagedata: SERVERPAGES[] = serverpage;
+
 
   constructor(private navCtrl: NavController) { }
 

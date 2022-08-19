@@ -8,6 +8,7 @@ import { MoneyPageRoutingModule } from './money-routing.module';
 
 import { MoneyPage } from './money.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
