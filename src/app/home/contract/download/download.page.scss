@@ -1,17 +1,21 @@
-ul{
+ul {
   padding: 20px;
-  li{
+
+  li {
     list-style: none;
     margin-bottom: 30px;
-    a{
+    background: #eee;
+    border: 1px solid #000;
+    border-radius: 12px;
+
+    a {
       display: block;
       padding: 10px;
       color: #333;
       text-decoration: none;
       text-align: center;
-      border: 1px solid #000;
-      border-radius: 12px;
-      &:hover{
+
+      &:hover {
         text-decoration: underline;
       }
     }
