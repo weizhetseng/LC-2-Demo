@@ -8,4 +8,14 @@
     <img src="./assets/icon/標題素材.png" alt="">
     <p>最新消息</p>
   </div>
+
+  <ion-card *ngFor="let ne of a" (click)="showDetail(ne)" class="card">
+
+    <ion-card-header>
+      <ion-card-subtitle>{{today | date}}</ion-card-subtitle>
+      <ion-card-title>{{ne.title}}</ion-card-title>
+    </ion-card-header>
+    <img src="{{ne.photo}}" class="ion-padding"  class="photo">
+  </ion-card>
+
 </ion-content>
