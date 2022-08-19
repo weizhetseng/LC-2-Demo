@@ -2,6 +2,14 @@
   <img class="header" src="./assets/icon/homeLogo.png" alt="">
 </ion-header>
 <ion-content>
+
+<ion-item>
+  <ion-label>切換深色模式</ion-label>
+  <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
+</ion-item>
+
+
+
   <div>
     <swiper [config]="swiperConfig">
       <ng-template swiperSlide>
