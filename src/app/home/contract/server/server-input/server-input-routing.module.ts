@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ServerInputPage
+  },
+  {
+    path: 'server-confirm',
+    loadChildren: () => import('./server-confirm/server-confirm.module').then( m => m.ServerConfirmPageModule)
   }
 ];
 
