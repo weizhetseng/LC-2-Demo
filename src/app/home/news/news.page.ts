@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NEWS } from '../model/news.model';
-import { newsdata } from '../mock/mock.news';
-
 
 @Component({
   selector: 'app-news',
@@ -11,15 +8,8 @@ import { newsdata } from '../mock/mock.news';
 export class NewsPage implements OnInit {
 
   constructor() { }
-  page :NEWS[] = newsdata
-  selectNews?: NEWS
-
- 
-
 
   ngOnInit() {
-
   }
-
 
 }

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { MONEYPAGES } from '../model/money.model';
-import { moneypage } from '../mock/mock.money';
-
-
+import { moneypage, MONEYPAGES } from '../mock/moneypage';
 @Component({
   selector: 'app-money',
   templateUrl: './money.page.html',
@@ -11,17 +8,18 @@ import { moneypage } from '../mock/mock.money';
 })
 export class MoneyPage implements OnInit {
 
+  pagedata: MONEYPAGES[] = moneypage;
+  selectpage?: MONEYPAGES;
+
   constructor(private navCtrl: NavController) { }
-  pagedata : MONEYPAGES[] = moneypage
-  selectpage? :MONEYPAGES;
 
   ngOnInit() {
   }
 
-  showDetail(selectpage:MONEYPAGES):void{
-    this.navCtrl.navigateForward('home/money/'+ selectpage.type);
+  showDetail(selectpage: MONEYPAGES): void {
+
+    this.navCtrl.navigateForward('home/money/' + selectpage.type);
+
   }
 
-
-  
 }

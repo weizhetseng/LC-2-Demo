@@ -12,10 +12,22 @@ export class ContractPage implements OnInit {
 
   ngOnInit() {
   }
-  showDetail() {
+  showserver() {
 
     this.navCtrl.navigateForward('home/contract/server');
 
-    }
+  }
+  showdownload() {
+
+    this.navCtrl.navigateForward('home/contract/download');
+
+  }
+
+  showorder() {
+
+    this.navCtrl.navigateForward('home/contract/order');
+
+  }
+
 
 }

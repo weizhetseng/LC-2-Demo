@@ -7,13 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonatePage implements OnInit {
 
-displaytop :string = "inline"
-
-close():void {
-  this.displaytop = "none"
-}
-
-
   constructor() { }
 
   ngOnInit() {

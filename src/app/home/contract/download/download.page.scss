@@ -1,0 +1,19 @@
+ul{
+  padding: 20px;
+  li{
+    list-style: none;
+    margin-bottom: 30px;
+    a{
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid #000;
+      border-radius: 12px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
