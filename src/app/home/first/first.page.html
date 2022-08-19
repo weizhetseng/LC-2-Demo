@@ -1,8 +1,28 @@
 <ion-header>
-  <img class="header" src="./assets/icon/至頂宮廟圖.png" alt="">
+  <img class="header" src="./assets/icon/homeLogo.png" alt="">
 </ion-header>
 <ion-content>
-  <img src="./assets/icon/媽祖home.png" alt="">
+  <div>
+    <swiper [config]="swiperConfig">
+      <ng-template swiperSlide>
+        <img src="./assets/icon/媽祖home.png" alt="">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="./assets/icon/媽祖home.png" alt="">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="./assets/icon/媽祖home.png" alt="">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="./assets/icon/媽祖home.png" alt="">
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="./assets/icon/媽祖home.png" alt="">
+      </ng-template>
+
+    </swiper>
+  </div>
+
 
 
   <div class="calendar">
@@ -12,13 +32,29 @@
       <p>星期ㄧ</p>
     </div>
     <div class="fortune">
-      <div>
+      <div class="fortune_text1">
         <p>壬寅年 四月初七 立夏</p>
         <p>相沖 屬虎(甲寅，49歲)</p>
       </div>
-      <div>
-        <div><p>開光 出行 嫁娶</p></div>
-        <div><p>動土 移徙 開市</p></div>
+      <div class="fortune_text2">
+        <div class="lucky">
+         <p>宜</p>
+         <ul>
+           <li>開光</li>
+           <li>出行</li>
+           <li>嫁娶</li>
+         </ul>
+        </div>
+        <div class="bad">
+         <p>忌</p>
+         <ul>
+           <li>動土</li>
+           <li>移徙</li>
+           <li>開市</li>
+           <li>破土</li>
+           <li>安葬</li>
+         </ul>
+        </div>
       </div>
     </div>
   </div>
