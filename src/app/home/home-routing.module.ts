@@ -13,7 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'news',
-        loadChildren: () => import('./news/news.module').then(m => m.NewsPageModule)
+        loadChildren: () => import('./contract/contract.module').then(m => m.ContractPageModule)
       },
       {
         path: 'money',
