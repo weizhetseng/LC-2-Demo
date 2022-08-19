@@ -22,13 +22,7 @@ bannerimgs : HomeBanners[] = bannerpic;
   ngOnInit() {
     Swiper.use([Pagination]);
   }
-  onToggleColorTheme(event) {
-    if (event.detail.checked) {
-      document.body.setAttribute('color-theme', 'dark');
-    } else {
-      document.body.setAttribute('color-theme', 'light');
-    }
-  }
+
 
 
 

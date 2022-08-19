@@ -6,16 +6,16 @@
 </swiper>
 </ion-header>
 <ion-content>
-
-<ion-item>
-  <ion-label>切換深色模式</ion-label>
-  <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
-</ion-item>
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button color="light">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 
 
   <div>
-    <swiper [config]="swiperConfig" > 
+    <swiper [config]="swiperConfig" >
       <ng-template swiperSlide>
         <img src="./assets/images/mz_q.png" alt="">
       </ng-template>
