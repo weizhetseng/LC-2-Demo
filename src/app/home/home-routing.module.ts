@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: 'first',
-        loadChildren: () => import('./first/first.module').then( m => m.FirstPageModule)
+        loadChildren: () => import('./first/first.module').then(m => m.FirstPageModule)
       },
       {
         path: 'news',
@@ -26,6 +26,9 @@ const routes: Routes = [
       {
         path: 'contract',
         loadChildren: () => import('./contract/contract.module').then(m => m.ContractPageModule)
+      }, {
+        path: 'setting',
+        loadChildren: () => import('./setting/setting.module').then(m => m.SettingPageModule)
       },
       {
         path: '',
@@ -41,8 +44,9 @@ const routes: Routes = [
   },
   {
     path: 'loading',
-    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
-  }
+    loadChildren: () => import('./loading/loading.module').then(m => m.LoadingPageModule)
+  },
+
 
 ];
 

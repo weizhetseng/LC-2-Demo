@@ -13,15 +13,12 @@
 </ion-header>
 <ion-content>
 
-<ion-item>
-  <ion-label>切換深色模式</ion-label>
-  <ion-toggle (ionChange)="onToggleColorTheme($event)"></ion-toggle>
-</ion-item>
+
 
 
 
   <div>
-    <swiper [config]="swiperConfig" > 
+    <swiper [config]="swiperConfig" >
       <ng-template swiperSlide>
         <img src="./assets/images/mz_q.png" alt="">
       </ng-template>
