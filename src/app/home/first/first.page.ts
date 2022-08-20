@@ -15,7 +15,7 @@ export class FirstPage implements OnInit {
     pagination: true,
   };
 
-bannerimgs : HomeBanners[] = bannerpic;
+  bannerimgs: HomeBanners[] = bannerpic;
 
   constructor() { }
 
