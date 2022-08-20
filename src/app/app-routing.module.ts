@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path:'draw',
+    loadChildren:() => import('./home/money/draw/draw.module').then( m => m.DrawPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
