@@ -17,11 +17,12 @@
     </ion-list>
     <ion-button (click)="draws()">抽籤</ion-button>
     <div   style="display:{{displaytype5}}">
-    <ion-img class="ans" src="../../../../assets/images/barrel_n.png"></ion-img>
+      <img src="{{git1URL}}" alt="Description"  style="height: 30% ;"/>
     </div>
     <div  style="display:{{displaytype1}}">
   <ion-item>抽籤結果為 第 {{ans}} 號籤，請擲筊</ion-item>
   <ion-button (click)="draw2()">擲筊</ion-button>
+  <img src="{{git2URL}}" alt="Description" style="height: 30% ;" />
   </div>
   <div  style="display:{{displaytype2}}">
   <ion-item>擲筊結果為   {{drawans}}</ion-item>

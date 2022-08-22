@@ -18,8 +18,8 @@ export class DrawPage implements OnInit {
    this.displaytype5 = "inline";
   }
 
-
-
+  git1URL :string="../../../../assets/gif/fortune-telling.gif";
+  git2URL :string="../../../../assets/gif/擲筊.gif";
   dtype? : String;
   ans : Number = 0;
   drawans? :String;
