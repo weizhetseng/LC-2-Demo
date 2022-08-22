@@ -6,29 +6,27 @@
 </ion-header>
 
 <ion-content *ngIf="newses" class="ion-padding">
+  <ng-container>
   <div style="margin: auto;">
-<h1>{{newses.title}}</h1><p>{{newses.uptime}}</p>
-<h3>{{newses.content1}}</h3>
-<h3>{{newses.content2}}</h3>
-<h3>{{newses.content3}}</h3>
-<h3>{{newses.content4}}</h3>
-<h3>{{newses.content5}}</h3>
-<h3>{{newses.content6}}</h3>
+<h1>{{newses.title}}</h1><p *ngIf="newses.uptime">{{newses.uptime}}</p>
+<h3 *ngIf="newses.content1">{{newses.content1}}</h3>
+<h3 *ngIf="newses.content2">{{newses.content2}}</h3>
+<h3 *ngIf="newses.content3">{{newses.content3}}</h3>
+<h3 *ngIf="newses.content4">{{newses.content4}}</h3>
+<h3 *ngIf="newses.content5">{{newses.content5}}</h3>
+<h3 *ngIf="newses.content6">{{newses.content6}}</h3>
 </div>
 <table style="text-align:center ;">
-  <tr>
-    <td>
-     <ion-img src="{{newses.photo1}}" ></ion-img>
-    </td>
-    <td>
-      <ion-img src="{{newses.photo2}}" ></ion-img>
-    </td>
-  </tr>
-  <td>
-    <ion-img src="{{newses.photo3}}" ></ion-img>
-   </td>
-   <td>
-     <ion-img src="{{newses.photo4}}" ></ion-img>
-   </td>
+<tr>
+  <td><ion-img *ngIf="newses.photo2" class="image" src="{{newses.photo2}}" ></ion-img></td>
+ <tr>
+  <td><ion-img *ngIf="newses.photo3" class="image"  src="{{newses.photo3}}" ></ion-img></td>
+</tr>
+<tr>
+  <td><ion-img *ngIf="newses.photo4" class="image"  src="{{newses.photo4}}" ></ion-img></td>
+</tr>
+
+
 </table>
+</ng-container>
 </ion-content>
