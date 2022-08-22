@@ -9,6 +9,16 @@ import { Location } from '@angular/common';
 export class DrawPage implements OnInit {
   constructor(private location: Location ) { }
 
+  ionViewWillEnter(){
+   this.ans = 0
+   this.displaytype1 = "none";
+   this.displaytype2 = "none";
+   this.displaytype3 = "none";
+   this.displaytype4 = "none";
+   this.displaytype5 = "inline";
+  }
+
+
 
   dtype? : String;
   ans : Number = 0;
@@ -97,15 +107,6 @@ export class DrawPage implements OnInit {
   goBack(): void { 
     this.location.back(); 
   }
-
-
-  
-
-
-
-
-
-
 
 
 }
