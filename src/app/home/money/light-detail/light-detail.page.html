@@ -8,7 +8,7 @@
     <img src="./assets/icon/標題素材.png" alt="">
     <p>祈福燈種</p>
   </div>
-  <ion-card>
+  <ion-card  (click)="showDetail()">
     <img src="./assets/icon/燈種圖 (1).png" alt="">
     <ion-card-header>
       <ion-card-subtitle>光明燈</ion-card-subtitle>
@@ -19,7 +19,7 @@
       <p class="price">NT$ 1000/500/300</p>
     </ion-card-content>
     <ion-toolbar>
-      <ion-button color="danger" size="small" slot="end" (click)="showDetail()">
+      <ion-button color="danger" size="small" slot="end">
         立即預約
       </ion-button>
     </ion-toolbar>
