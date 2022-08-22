@@ -37,31 +37,3 @@
     </div>
 </ion-content>
 
-
-<script>
-fade(area,speed,type){
-  var op  = Number(area.style.opacity);
-  if(type == "in"){
-  if ( op !==1 ){
-var num = 0;
-var st = setInterval(function() {
-  num ++;
-  op = num/10;
-  if(num>=10){
-    clearInterval(st);
-  }
-},speed);
-  }
- }else if (type == "out"){
-  if ( op !==0 ){
-    var num = 10;
-    var st = setInterval(function() {
-      num --;
-      op = num/10;
-      if(num <= 0){
-        clearInterval(st);
-      }
-    },speed);
-      }
- }
-}</script>
