@@ -17,24 +17,22 @@ export class FirstPage implements OnInit {
   };
 
 
+
   detialmessage:NEWSDETIAL[]=newsdetials;  //a
 
+  constructor(private navCtrl: NavController) { }
 
-
-  constructor(private navCtrl :NavController,
-    ) { }
 
   ngOnInit() {
     Swiper.use([Pagination]);
   }
 
-
+  showSetting(): void {
+    this.navCtrl.navigateForward('home/setting');
+  }
   showDetail(selectedNews : NEWSDETIAL){
     console.log("0000")
     this.navCtrl.navigateForward('home/first/newsdetial/'+selectedNews.id);
-  }
-
-
-
+}
 
 }

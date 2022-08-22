@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-setting',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
@@ -17,5 +18,11 @@ export class SettingPage implements OnInit {
     } else {
       document.body.setAttribute('color-theme', 'light');
     }
+  }
+
+  showStaff(): void {
+
+    this.navCtrl.navigateForward('home/setting/staff');
+
   }
 }
