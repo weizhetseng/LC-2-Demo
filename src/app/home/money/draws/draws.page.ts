@@ -89,10 +89,23 @@ this.displaytype5 = "none";
   this.displaytype6 = "none";
  }
  ngOnInit() {
+  
 }
 
 
-
+ionViewWillLeave(){
+  console.log("ionViewWillEnter")
+  this.ans  = 0;
+  this.displaytype1 = "none";
+  this.displaytype2 = "none";
+  this.displaytype3 = "none";
+  this.displaytype4 = "none";
+  this.displaytype5 = "inline";
+  this.displaytype6 = "inline";
+  this.filename = "mzimg";
+  this.imgname = "1";
+  this.divination = "lol.png";
+}
 
 
 

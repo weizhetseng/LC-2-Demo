@@ -16,13 +16,13 @@ export class ServerPage implements OnInit {
 
   constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
-  }
+
 
   showDetail() {
-
     this.navCtrl.navigateForward('home/contract/server/server-input');
+    }
 
+    ngOnInit() {
     }
 
 }
