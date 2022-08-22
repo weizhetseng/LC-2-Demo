@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper, { SwiperOptions, Pagination } from 'swiper';
-import { HomeBanners } from '../model/newshome.model';
-import { bannerpic } from '../mock/mock.homeBanner';
+import { NEWSDETIAL } from '../model/news.detialmoedl';
+import { newsdetials } from '../mock/mock.newsdetial';
+import { NavController } from '@ionic/angular';
 
 
 
@@ -15,15 +16,23 @@ export class FirstPage implements OnInit {
     pagination: true,
   };
 
-  bannerimgs: HomeBanners[] = bannerpic;
 
-  constructor() { }
+  detialmessage:NEWSDETIAL[]=newsdetials;  //a
+
+
+
+  constructor(private navCtrl :NavController,
+    ) { }
 
   ngOnInit() {
     Swiper.use([Pagination]);
   }
 
 
+  showDetail(selectedNews : NEWSDETIAL){
+    console.log("0000")
+    this.navCtrl.navigateForward('home/first/newsdetial/'+selectedNews.id);
+  }
 
 
 

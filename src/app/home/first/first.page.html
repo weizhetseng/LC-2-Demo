@@ -1,7 +1,7 @@
 <ion-header>
 <swiper  style="text-align:center ;">
-  <ng-template swiperSlide  *ngFor="let i of bannerimgs ">
-    <img class="header" src="./assets/images/news/{{i.name}}" alt="" >
+  <ng-template swiperSlide  *ngFor="let h of detialmessage">
+    <img class="header" src="{{h.photo1}}" alt="" sizes="height:100px" (click)="showDetail(h)">
   </ng-template>
 </swiper>
 </ion-header>
@@ -11,7 +11,6 @@
       <ion-icon name="settings-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
 
 
   <div>
