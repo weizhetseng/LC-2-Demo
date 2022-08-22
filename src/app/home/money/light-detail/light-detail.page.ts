@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { lightdetail, LIGHTDETAIL } from '../../mock/lightdetail';
 
 @Component({
   selector: 'app-light-detail',
@@ -7,6 +8,8 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./light-detail.page.scss'],
 })
 export class LightDetailPage implements OnInit {
+
+  pagedata: LIGHTDETAIL[] = lightdetail;
 
   constructor(private navCtrl: NavController) { }
 
