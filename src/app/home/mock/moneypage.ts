@@ -9,15 +9,15 @@ export interface MONEYPAGES {
 
 
 export const moneypage: MONEYPAGES[] = [
-  {
-    id: 1,
-    name: '線上抽籤',
-    type: 'draw',
-    imageurl: '../../assets/icon/燈種圖.png',
-    text1: '前路迷茫，神恩指路',
-    text2: ''
+  // {
+  //   id: 1,
+  //   name: '線上抽籤',
+  //   type: 'draw',
+  //   imageurl: '../../assets/icon/燈種圖.png',
+  //   text1: '前路迷茫，神恩指路',
+  //   text2: ''
 
-  },
+  // },
   {
     id: 2,
     name: '線上點燈',
