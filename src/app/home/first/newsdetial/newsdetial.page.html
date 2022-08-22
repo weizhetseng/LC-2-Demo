@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>news-detial</ion-title>
+  </ion-toolbar>
+  <ion-button (click)="goBack()">Back</ion-button>
+</ion-header>
+
+<ion-content *ngIf="newses" class="ion-padding">
+  <div style="margin: auto;">
+<h1>{{newses.title}}</h1><p>{{newses.uptime}}</p>
+<h3>{{newses.content1}}</h3>
+<h3>{{newses.content2}}</h3>
+<h3>{{newses.content3}}</h3>
+<h3>{{newses.content4}}</h3>
+<h3>{{newses.content5}}</h3>
+<h3>{{newses.content6}}</h3>
+</div>
+<table style="text-align:center ;">
+  <tr>
+    <td>
+     <ion-img src="{{newses.photo1}}" ></ion-img>
+    </td>
+    <td>
+      <ion-img src="{{newses.photo2}}" ></ion-img>
+    </td>
+  </tr>
+  <td>
+    <ion-img src="{{newses.photo3}}" ></ion-img>
+   </td>
+   <td>
+     <ion-img src="{{newses.photo4}}" ></ion-img>
+   </td>
+</table>
+</ion-content>

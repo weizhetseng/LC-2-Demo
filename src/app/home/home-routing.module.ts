@@ -12,10 +12,6 @@ const routes: Routes = [
         loadChildren: () => import('./first/first.module').then(m => m.FirstPageModule)
       },
       {
-        path: 'news',
-        loadChildren: () => import('./news/news.module').then(m => m.NewsPageModule)
-      },
-      {
         path: 'money',
         loadChildren: () => import('./money/money.module').then(m => m.MoneyPageModule)
       },
