@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 import { NEWSDETIAL } from '../../model/news.detialmoedl';
 import { NewsService } from '../../service/news.service';
 import { Location } from '@angular/common';
@@ -11,7 +11,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./newsdetial.page.scss'],
 })
 export class NewsdetialPage implements OnInit {
-  newses?: NEWSDETIAL;
+  newses: NEWSDETIAL;
 
 
   constructor(

@@ -13,9 +13,10 @@ export class NewsService {
   constructor() { }
 
   getNews(id: number): NEWSDETIAL {
+    // eslint-disable-next-line @typescript-eslint/prefer-for-of
     for (let i = 0; i < this.newsA.length; i++) {
       if (this.newsA[i].id === id) {
-        return this.newsA[i]
+        return this.newsA[i];
       }
     } return null;
   }

@@ -18,7 +18,7 @@ export class FirstPage implements OnInit {
 
 
 
-  detialmessage:NEWSDETIAL[]=newsdetials;  //a
+  detialmessage: NEWSDETIAL[]=newsdetials;  //a
 
   constructor(private navCtrl: NavController) { }
 
@@ -30,8 +30,7 @@ export class FirstPage implements OnInit {
   showSetting(): void {
     this.navCtrl.navigateForward('home/setting');
   }
-  showDetail(selectedNews : NEWSDETIAL){
-    console.log("0000")
+  showDetail(selectedNews: NEWSDETIAL){
     this.navCtrl.navigateForward('home/first/newsdetial/'+selectedNews.id);
 }
 

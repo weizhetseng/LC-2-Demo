@@ -1,8 +1,8 @@
 export interface MONEYPAGES {
-    id: number; 
+    id: number;
     name: string;
-     type: string; 
-     imageurl: string; 
-     text1: string; 
+     type: string;
+     imageurl: string;
+     text1: string;
      text2: string;
-}
+};
