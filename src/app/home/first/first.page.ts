@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import Swiper, { SwiperOptions, Pagination } from 'swiper';
 import { HomeBanners } from '../model/newshome.model';
 import { bannerpic } from '../mock/mock.homeBanner';
+import { NavController } from '@ionic/angular';
 
 
 
@@ -17,13 +18,17 @@ export class FirstPage implements OnInit {
 
   bannerimgs: HomeBanners[] = bannerpic;
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
     Swiper.use([Pagination]);
   }
 
+  showSetting(): void {
 
+    this.navCtrl.navigateForward('home/setting');
+
+  }
 
 
 
