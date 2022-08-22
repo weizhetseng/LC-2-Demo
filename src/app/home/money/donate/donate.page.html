@@ -21,22 +21,34 @@
       <img src="../../../../assets/images/warnpage.png">
     </div>
     </div>
-    <div class="lowlv" style="text-align:center ;">
-    <form>
-      <p>大德尊姓大名：</p><input type="text"><br>
-      <p>性別：</p><input  type="radio" name="sex" value="male">男
-      <input  type="radio" name="sex" value="female">女<p>
-      <p>大德誕辰：</p><input type="date">
-      <p>通訊地址：</p><input type="text">
-      <p>樂捐金額：</p><input type="number">
-      <p>給廟方的話：</p><textarea></textarea>
-    </form>
-    <button expand="block" size="small" color="secondary">確定</button>
+
+<div id="container" style="text-align:center ;">
+      <form action="" method="post">
+        <div>
+          <label for="">大德尊姓大名：</label>
+          <input type="text" placeholder="請輸入大德姓名">
+        </div>
+        <div>
+          <label for="">性別：</label>
+          <input type="radio" name="sex" id="">善男
+          <input type="radio" name="sex" id="">信女
+        </div>
+        <div>
+          <label for="">大德誕辰：</label>
+          <input type="date" placeholder="請輸入大德誕辰">
+        </div>
+        <div>
+          <label for="">通訊地址：</label>
+          <input type="text" placeholder="請輸入大德居住地址">
+        </div>
+        <div>
+          <label for="">樂捐金額：</label>
+          <input type="number" placeholder="請輸入捐獻金額(新台幣)" >
+        </div>
+        <div>
+          <p>給廟方的話：</p><textarea placeholder="指定捐獻項目或迴向特定人士，請於此備註。"></textarea>
+        </div>
+       <input type="button" value="確定" >
+      </form>
     </div>
-
-
-
-
-
-
 </ion-content>
