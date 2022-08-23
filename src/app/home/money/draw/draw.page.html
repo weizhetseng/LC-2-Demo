@@ -1,12 +1,15 @@
-<ion-header>
-    <ion-toolbar>
-      <ion-title>draws</ion-title>
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>draw </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    </ion-toolbar>
-  </ion-header> 
-  
+
   <ion-content >
-    <ion-button (click)="goBack()">Back</ion-button>
+    <ion-back-button (click)="goBack()">Back</ion-back-button>
     <ion-list>
       <ion-item>
         <ion-select [(ngModel)]="dtype" placeholder="請選擇籤種" >
@@ -16,17 +19,17 @@
       </ion-item>
     </ion-list>
     <ion-button (click)="draws()">抽籤</ion-button>
-    <div   style="display:{{displaytype5}}">
-      <img src="{{git1URL}}" alt="Description"  style="height: 30% ;"/>
+    <div style="display:{{displaytype5}}">
+      <img src="{{git1URL}}" alt="Description"/>
     </div>
     <div  style="display:{{displaytype1}}">
   <ion-item>抽籤結果為 第 {{ans}} 號籤，請擲筊</ion-item>
   <ion-button (click)="draw2()">擲筊</ion-button>
-  <img src="{{git2URL}}" alt="Description" style="height: 30% ;" />
+  <img src="{{git2URL}}" alt="Description"/>
   </div>
   <div  style="display:{{displaytype2}}">
   <ion-item>擲筊結果為   {{drawans}}</ion-item>
-<ion-img class="ans" src="../../../../assets/images/{{drawimg}}"></ion-img>  
+<ion-img class="ans" src="../../../../assets/images/{{drawimg}}"></ion-img>
 </div>
   <div  style="display:{{displaytype3}}">
     <ion-button (click)="open()">查看籤詩</ion-button>
@@ -34,5 +37,5 @@
     <div  style="display:{{displaytype4}} ">
   <ion-img id="ANS" src="../../../../assets/images/{{filename}}/{{imgname}}.png"></ion-img>
       </div>
+      <div class="block"></div>
   </ion-content>
-  
