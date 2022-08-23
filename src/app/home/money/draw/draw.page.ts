@@ -63,15 +63,17 @@ export class DrawPage implements OnInit {
     }
   
     draws():void{
+      if(   (this.dtype == "mz") || (this.dtype == "gl")  
+      ){
       if ( this.dtype == "mz"){
         this.ans = this.drawsmz();
         this.displaytype5 = "none"
       }else if (this.dtype == "gl"){
         this.ans = this.drawsgl();
         this.displaytype5 = "none"
-      }else{
-        this.ans = 99999999;
-        this.displaytype5 = "none"
+      // }else{
+      //   this.ans = 99999999;
+      //   this.displaytype5 = "none"
       }
       this.displaytype1 = "inline";
       if (this.displaytype2 == "inline"){
@@ -80,6 +82,10 @@ export class DrawPage implements OnInit {
         this.displaytype4 = "none";
         this.displaytype5 = "inline"
       }
+    }else{
+      alert("請選擇籤種")
+    }
+
     }
   
     draw2():void{
