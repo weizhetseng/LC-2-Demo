@@ -28,6 +28,7 @@ export class DrawPage implements OnInit {
   displaytype3:string="none";
   displaytype4:string="none";
   displaytype5:string="inline";
+  displaytype6:string="inline";
   //   ../../../../assets/image/mzimg/Divination_MaZu_1.png
   filenames:string[] = ["mzimg","ylimg"];
   filename? :string
@@ -95,13 +96,16 @@ export class DrawPage implements OnInit {
    if(numm == 1){
     this.drawans = "聖筊，請點選按鈕查看籤詩結果。"
     this.displaytype3 = "inline";
+    this.displaytype6 = "none";
     this.drawimg = this.drawimgs[2]
    }else if (numm ==  2){
     this.drawans = "笑筊，請重新抽籤或詢問問題"
     this.drawimg = this.drawimgs[0]
+    this.displaytype6 = "none";
    }else if (numm ==  3){
     this.drawans = "蓋筊，請重新抽籤或詢問問題"
     this.drawimg = this.drawimgs[1]
+    this.displaytype6 = "none";
    }else{
       this.drawans = "出四啦!趕快通知廟方進行維修!"
     }

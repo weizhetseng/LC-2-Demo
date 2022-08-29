@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>draw </ion-title>
+    <ion-title>線上抽籤</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -25,7 +25,9 @@
     <div  style="display:{{displaytype1}}">
   <ion-item>抽籤結果為 第 {{ans}} 號籤，請擲筊</ion-item>
   <ion-button (click)="draw2()">擲筊</ion-button>
+  <div style="display:{{displaytype6}} ;">
   <img src="{{git2URL}}" alt="Description"/>
+</div>
   </div>
   <div  style="display:{{displaytype2}}">
   <ion-item>擲筊結果為   {{drawans}}</ion-item>
@@ -35,7 +37,7 @@
     <ion-button (click)="open()">查看籤詩</ion-button>
     </div>
     <div  style="display:{{displaytype4}} ">
-  <ion-img id="ANS" src="../../../../assets/images/{{filename}}/{{imgname}}.png"></ion-img>
+  <ion-img  src="../../../../assets/images/{{filename}}/{{imgname}}.png"></ion-img>
       </div>
       <div class="block"></div>
   </ion-content>
